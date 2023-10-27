@@ -23,31 +23,31 @@ containing all the data files mentioned previously.
 * The notebook contains python code and the whole code runs on Google colab lasting
 for under 40 minutes.
 * The General Overview of the Notebook is as follows:
-A. Importing Relevant libraries
+1. Importing Relevant libraries
 geopandas (0.13.2), pandas (1.5.3), numpy (1.23.5), scikit-learn (1.2.2),
 imbalanced-learn (0.10.1)
-B. Reading and Cleaning Data
-C. Engineering Features
+1. Reading and Cleaning Data
+1. Engineering Features
 The features fed into the model are 38 and fall into 3 categories:
-1. Features from the train and test geometries which include the area
+- Features from the train and test geometries which include the area
 ('area') of the geometry under consideration
-2. Features from the land-use-land-cover categories which make up the
+- Features from the land-use-land-cover categories which make up the
 geometry for which the susceptibility is being predicted.
 This includes total area of each of the land-use-land-cover category
 (eg: 'area_31' indicates the size of lands with land-use-land-cover
 code of 31 ('cod_31') that fall within the geometry under consideration)
-3. Features from geological fault lines that lie within the geometry for
+- Features from geological fault lines that lie within the geometry for
 which susceptibility is being predicted.
 This includes the cumulative length ('SHAPE_LEN') of the fault lines
 that falls within the geometry.
-D. Developing Pipelines and training models
+1. Developing Pipelines and training models
   * Pipeline involved scaling (standardScaler), selecting best features
 (SelectKBest) and then fitting a RandomForestClassifier model
   * Prior to fitting the model to the training data, balance was introduced to the
 number of landslide susceptible and landslide-proof observations by the help
 of the SMOTE technique.
   * The model's hyperparameters were tuned using the RandomizedsearchCV
-E. Predicting and preparing submission
+1. Predicting and preparing submission
   * Predictions are made on the data imported from 'Test.gpkg' which has been
 transformed to include the same features as the train data.
   * The final predictions are exported to 'Submission.csv' in the same directory as
