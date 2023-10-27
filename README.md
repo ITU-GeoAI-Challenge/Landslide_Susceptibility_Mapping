@@ -2,9 +2,9 @@
 GEO-AI Challenge for Landslide Susceptibility
 Mapping
 This solution makes use of five files:
-● 4 data files (all from the data provided as part of the competition):
-○ 'Train.gpkg' which contains geometries classified as either susceptible or not.
-○ 'geological_faults.gpkg' and 'land_use_land_cover.gpkg' for extracting
+* 4 data files (all from the data provided as part of the competition):
+  * 'Train.gpkg' which contains geometries classified as either susceptible or not.
+  * 'geological_faults.gpkg' and 'land_use_land_cover.gpkg' for extracting
 additional features about any specific land geometry that will aid in the
 prediction of its susceptibility to landslides.
 ○ 'Test.gpkg' contains the data of locations for testing the performance of the
