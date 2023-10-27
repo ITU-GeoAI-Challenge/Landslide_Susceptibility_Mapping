@@ -29,14 +29,14 @@ imbalanced-learn (0.10.1)
 2. Reading and Cleaning Data
 3. Engineering Features
 The features fed into the model are 38 and fall into 3 categories:
-  - Features from the train and test geometries which include the area
+  * Features from the train and test geometries which include the area
 ('area') of the geometry under consideration
-  - Features from the land-use-land-cover categories which make up the
+  * Features from the land-use-land-cover categories which make up the
 geometry for which the susceptibility is being predicted.
 This includes total area of each of the land-use-land-cover category
 (eg: 'area_31' indicates the size of lands with land-use-land-cover
 code of 31 ('cod_31') that fall within the geometry under consideration)
-  - Features from geological fault lines that lie within the geometry for
+  * Features from geological fault lines that lie within the geometry for
 which susceptibility is being predicted.
 This includes the cumulative length ('SHAPE_LEN') of the fault lines
 that falls within the geometry.
