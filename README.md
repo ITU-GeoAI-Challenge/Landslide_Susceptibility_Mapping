@@ -29,26 +29,26 @@ imbalanced-learn (0.10.1)
 2. Reading and Cleaning Data
 3. Engineering Features
 The features fed into the model are 38 and fall into 3 categories:
- - Features from the train and test geometries which include the area
+  - Features from the train and test geometries which include the area
 ('area') of the geometry under consideration
- - Features from the land-use-land-cover categories which make up the
+  - Features from the land-use-land-cover categories which make up the
 geometry for which the susceptibility is being predicted.
 This includes total area of each of the land-use-land-cover category
 (eg: 'area_31' indicates the size of lands with land-use-land-cover
 code of 31 ('cod_31') that fall within the geometry under consideration)
- - Features from geological fault lines that lie within the geometry for
+  - Features from geological fault lines that lie within the geometry for
 which susceptibility is being predicted.
 This includes the cumulative length ('SHAPE_LEN') of the fault lines
 that falls within the geometry.
 4. Developing Pipelines and training models
-  * Pipeline involved scaling (standardScaler), selecting best features
+   * Pipeline involved scaling (standardScaler), selecting best features
 (SelectKBest) and then fitting a RandomForestClassifier model
-  * Prior to fitting the model to the training data, balance was introduced to the
+   * Prior to fitting the model to the training data, balance was introduced to the
 number of landslide susceptible and landslide-proof observations by the help
 of the SMOTE technique.
-  * The model's hyperparameters were tuned using the RandomizedsearchCV
+   * The model's hyperparameters were tuned using the RandomizedsearchCV
 5. Predicting and preparing submission
-  * Predictions are made on the data imported from 'Test.gpkg' which has been
+   * Predictions are made on the data imported from 'Test.gpkg' which has been
 transformed to include the same features as the train data.
-  * The final predictions are exported to 'Submission.csv' in the same directory as
+   * The final predictions are exported to 'Submission.csv' in the same directory as
 the jupyter notebook.
