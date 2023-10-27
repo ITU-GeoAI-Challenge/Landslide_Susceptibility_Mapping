@@ -23,11 +23,11 @@ containing all the data files mentioned previously.
 * The notebook contains python code and the whole code runs on Google colab lasting
 for under 40 minutes.
 * The General Overview of the Notebook is as follows:
-a. Importing Relevant libraries
+A. Importing Relevant libraries
 geopandas (0.13.2), pandas (1.5.3), numpy (1.23.5), scikit-learn (1.2.2),
 imbalanced-learn (0.10.1)
-b. Reading and Cleaning Data
-c. Engineering Features
+B. Reading and Cleaning Data
+C. Engineering Features
 The features fed into the model are 38 and fall into 3 categories:
 1. Features from the train and test geometries which include the area
 ('area') of the geometry under consideration
@@ -40,14 +40,14 @@ code of 31 ('cod_31') that fall within the geometry under consideration)
 which susceptibility is being predicted.
 This includes the cumulative length ('SHAPE_LEN') of the fault lines
 that falls within the geometry.
-d. Developing Pipelines and training models
+D. Developing Pipelines and training models
   * Pipeline involved scaling (standardScaler), selecting best features
 (SelectKBest) and then fitting a RandomForestClassifier model
   * Prior to fitting the model to the training data, balance was introduced to the
 number of landslide susceptible and landslide-proof observations by the help
 of the SMOTE technique.
   * The model's hyperparameters were tuned using the RandomizedsearchCV
-e. Predicting and preparing submission
+E. Predicting and preparing submission
   * Predictions are made on the data imported from 'Test.gpkg' which has been
 transformed to include the same features as the train data.
   * The final predictions are exported to 'Submission.csv' in the same directory as
