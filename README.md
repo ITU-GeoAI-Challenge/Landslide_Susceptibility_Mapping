@@ -1,0 +1,1 @@
+# ITU_GeoAI_Landslide_Susceptibility
