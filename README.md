@@ -1,5 +1,7 @@
 
 # GEO-AI Challenge for Landslide Susceptibility Mapping
+Submission by Isaac Oluwafemi Ogunniyi (zindi username: isaacOluwafemiOg) for the ITU GeoAI Landslide Susceptibility Mapping challenge
+
 This solution makes use of five files:
 * 4 data files (all from the data provided as part of the competition):
   * 'Train.gpkg' which contains geometries classified as either susceptible or not.
