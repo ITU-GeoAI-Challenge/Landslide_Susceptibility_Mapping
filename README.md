@@ -3,7 +3,7 @@
 Submission by Isaac Oluwafemi Ogunniyi (zindi username: isaacOluwafemiOg) for the ITU GeoAI Landslide Susceptibility Mapping challenge
 
 This solution makes use of five files:
-* 4 data files (all from the data provided as part of the competition):
+* 4 data files (all from the data provided as part of the competition[https://zindi.africa/competitions/geo-ai-challenge-for-landslide-susceptibility-mapping/data]):
   * 'Train.gpkg' which contains geometries classified as either susceptible or not.
   * 'geological_faults.gpkg' and 'land_use_land_cover.gpkg' for extracting
 additional features about any specific land geometry that will aid in the
